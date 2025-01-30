@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MNIST Digit Recognizer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>MNIST Digit Recognizer</h1>
-        <input type="file" id="imageInput" accept="image/*">
-        <button onclick="predictDigit()">Predict</button>
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="file-upload-label">Upload Image</label>
+            <button onclick="predictDigit()">Predict Digit</button>
+        </div>
         <p id="result"></p>
         <img id="preview" src="" alt="Image Preview">
     </div>
